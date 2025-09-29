@@ -1,0 +1,85 @@
+ReviewScore Analysis Summary Report
+============================================================
+Generated on: 2025-09-29 16:13:21
+
+Overall Statistics:
+  Total Papers Analyzed: 3
+  Total Review Points: 60
+  Total Misinformed Points: 17
+  Overall Misinformed Rate: 28.3%
+  Average Quality Score: 2.33/5.0
+
+Paper-by-Paper Analysis:
+----------------------------------------
+Paper 1: high_quality_paper
+  Title: High-Quality Research Paper
+  Review Points: 20
+    - Questions: 6
+    - Claims: 9
+    - Arguments: 5
+  Misinformed Points: 1
+  Quality Score: 4.00/5.0
+  Quality Level: Good
+  Average Base Score: 4.37
+
+Paper 2: poor_quality_paper
+  Title: Poor-Quality Research Paper
+  Review Points: 15
+    - Questions: 6
+    - Claims: 7
+    - Arguments: 2
+  Misinformed Points: 8
+  Quality Score: 1.00/5.0
+  Quality Level: Very_Poor
+  Average Base Score: 1.98
+
+Paper 3: mixed_quality_paper
+  Title: Mixed-Quality Research Paper
+  Review Points: 25
+    - Questions: 7
+    - Claims: 12
+    - Arguments: 6
+  Misinformed Points: 8
+  Quality Score: 2.00/5.0
+  Quality Level: Poor
+  Average Base Score: 3.27
+
+Quality Level Distribution:
+  Good: 1 papers (33.3%)
+  Very_Poor: 1 papers (33.3%)
+  Poor: 1 papers (33.3%)
+
+Model Performance:
+  claude-3.5-sonnet:
+    Average Score: 4.37
+    Misinformed Rate: 5.0%
+    Average Confidence: 0.86
+  gpt-4o:
+    Average Score: 1.98
+    Misinformed Rate: 53.3%
+    Average Confidence: 0.46
+  gemini-2.5-flash:
+    Average Score: 3.27
+    Misinformed Rate: 32.0%
+    Average Confidence: 0.69
+
+Generated Plots:
+  01_review_score_distribution.png - Score distribution by review point type
+  02_model_comparison.png - Performance comparison across models
+  03_temporal_analysis.png - Review quality trends over time
+  04_paper_*_summary.png - Individual paper review summaries
+  05_multi_paper_dashboard.png - Comprehensive multi-paper analysis
+  06_quality_analysis.png - Advanced quality analysis by paper type
+  07_summary_report.txt - This summary report
+
+Key Recommendations:
+  1. This is a good review with mostly constructive feedback.
+  2. Reviewer made 1 factually incorrect claims.
+  3. Found 1 misinformed review points that need correction.
+  4. Review contains 19 high-quality review points.
+  5. Reviewer made 1 arguments with incorrect premises.
+  6. Reviewer asked 2 questions that are already answered in the paper.
+  7. Reviewer should verify the factual accuracy of arguments before making them.
+  8. Reviewer made 3 arguments with incorrect premises.
+  9. Found 8 misinformed review points that need correction.
+  10. Review contains 11 high-quality review points.
