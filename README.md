@@ -78,11 +78,11 @@ graph TB
     Z --> EE[Reasoning]
 
     %% Styling
-    classDef inputNode fill:#e1f5fe
-    classDef processNode fill:#f3e5f5
-    classDef decisionNode fill:#fff3e0
-    classDef humanNode fill:#e8f5e8
-    classDef outputNode fill:#fce4ec
+    classDef inputNode fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#000
+    classDef processNode fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    classDef decisionNode fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+    classDef humanNode fill:#e8f5e8,stroke:#388e3c,stroke-width:2px,color:#000
+    classDef outputNode fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000
 
     class A,F,H,I inputNode
     class B,G,J,K,L,M,N,O,P,Q,R processNode
@@ -95,8 +95,8 @@ graph TB
 1. **Input Processing**: Review points are classified into Questions, Claims, or Arguments
 2. **Knowledge Integration**: Multiple knowledge bases provide context for evaluation
 3. **SAT Solver**: Validates argument structure and extracts premises
-4. **LLM Evaluation**: Uses proprietary models for factuality assessment
-5. **Human-in-the-Loop**: LangGraph interrupts for human annotation when needed
+4. **LLM Evaluation**: Direct LLM calls with paper-specific prompts for factuality assessment
+5. **Human-in-the-Loop**: Optional LangGraph workflows for human annotation (alternative implementation)
 6. **Result Aggregation**: Combines AI and human evaluations for final scores
 
 ## LangGraph Agent Workflow
@@ -140,11 +140,11 @@ graph TD
     V[Argument Tool] --> C
 
     %% Styling
-    classDef startEnd fill:#4caf50,color:#fff
-    classDef process fill:#2196f3,color:#fff
-    classDef decision fill:#ff9800,color:#fff
-    classDef human fill:#9c27b0,color:#fff
-    classDef tool fill:#607d8b,color:#fff
+    classDef startEnd fill:#4caf50,stroke:#2e7d32,stroke-width:3px,color:#fff
+    classDef process fill:#2196f3,stroke:#1565c0,stroke-width:2px,color:#fff
+    classDef decision fill:#ff9800,stroke:#ef6c00,stroke-width:2px,color:#fff
+    classDef human fill:#9c27b0,stroke:#6a1b9a,stroke-width:2px,color:#fff
+    classDef tool fill:#607d8b,stroke:#37474f,stroke-width:2px,color:#fff
 
     class A,O startEnd
     class B,C,D,F,L,M,N process
@@ -153,7 +153,7 @@ graph TD
     class T,U,V tool
 ```
 
-### LangGraph Agent Features:
+### LangGraph Agent Features (Alternative Implementation):
 
 - **State Management**: TypedDict state with human input fields
 - **Tool Integration**: Direct tool calls for evaluation
@@ -162,6 +162,8 @@ graph TD
 - **Checkpointing**: MemorySaver for state persistence
 - **Thread Management**: UUID-based thread identification
 - **Error Handling**: Graceful fallbacks for missing messages
+
+**Note**: LangGraph is an alternative implementation. The primary evaluation method uses direct LLM calls with paper-specific prompts.
 
 ## Testing Workflow
 
@@ -578,11 +580,12 @@ reviewscore/
 - JSON-formatted outputs
 - Proper scoring rubrics
 
-#### 4. Human-in-the-Loop
+#### 4. Human-in-the-Loop (Optional)
 
-- LangGraph-based workflows
+- LangGraph-based workflows (alternative implementation)
 - State-based annotation process
 - Conditional routing for different review point types
+- **Primary method**: Direct LLM evaluation with paper-specific prompts
 
 ## 🔧 Configuration
 
