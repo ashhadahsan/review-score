@@ -134,23 +134,23 @@ graph TD
     Q --> R[Thread Management]
     R --> S[State Persistence]
 
-    %% Tool Integration
-    T[Question Tool] --> C
-    U[Claim Tool] --> C
-    V[Argument Tool] --> C
+    %% Evaluation Methods
+    T[Question Evaluator] --> C
+    U[Claim Evaluator] --> C
+    V[Argument Evaluator] --> C
 
     %% Styling
     classDef startEnd fill:#4caf50,stroke:#2e7d32,stroke-width:3px,color:#fff
     classDef process fill:#2196f3,stroke:#1565c0,stroke-width:2px,color:#fff
     classDef decision fill:#ff9800,stroke:#ef6c00,stroke-width:2px,color:#fff
     classDef human fill:#9c27b0,stroke:#6a1b9a,stroke-width:2px,color:#fff
-    classDef tool fill:#607d8b,stroke:#37474f,stroke-width:2px,color:#fff
+    classDef evaluator fill:#607d8b,stroke:#37474f,stroke-width:2px,color:#fff
 
     class A,O startEnd
     class B,C,D,F,L,M,N process
     class E decision
     class G,H,I,J,K human
-    class T,U,V tool
+    class T,U,V evaluator
 ```
 
 ### LangGraph Agent Features (Alternative Implementation):
@@ -209,10 +209,10 @@ graph LR
     Y[interactive_agent_test.py] --> E
 
     %% Styling
-    classDef testType fill:#e3f2fd
-    classDef testProcess fill:#f1f8e9
-    classDef testScript fill:#fff3e0
-    classDef decision fill:#fce4ec
+    classDef testType fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#000
+    classDef testProcess fill:#f1f8e9,stroke:#388e3c,stroke-width:2px,color:#000
+    classDef testScript fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+    classDef decision fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000
 
     class A,B,C,D,E testType
     class F,G,H,I,J,K,M,N,O,P,Q,R,S,T,U,V testProcess
