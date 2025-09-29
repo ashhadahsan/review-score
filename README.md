@@ -822,7 +822,6 @@ langchain-openai>=0.1.0
 langchain-anthropic>=0.1.0
 langchain-google-genai>=1.0.0
 langgraph>=0.1.0
-haystack-ai>=2.0.0
 pydantic>=2.0.0
 numpy>=1.24.0
 pandas>=2.0.0
@@ -890,7 +889,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Paper Authors**: For the original research and methodology
 - **LangChain Team**: For the excellent LLM framework
 - **LangGraph Team**: For the state-based workflow system
-- **Haystack Team**: For the document processing capabilities
 
 ## 📞 Support
 
