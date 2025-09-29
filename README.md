@@ -845,8 +845,8 @@ This implementation is based on the paper:
 **"ReviewScore: Misinformed Peer Review Detection with Large Language Models"**
 
 - **arXiv**: [2509.21679](https://arxiv.org/abs/2509.21679)
-- **Authors**: [Paper Authors]
-- **Year**: 2024
+- **Authors**: Hyun Ryu, Doohyuk Jang, Hyemin S. Lee, Joonhyun Jeong, Gyeongman Kim, Donghyeon Cho, Gyouk Chu, Minyeong Hwang, Hyeongwon Jang, Changhun Kim, Haechan Kim, Jina Kim, Joowon Kim, Yoonjeon Kim, Kwanhyung Lee, Chanjae Park, Heecheol Yun, Gregor Betz, Eunho Yang
+- **Year**: 25 Sep 2025
 
 ### Key Contributions
 
